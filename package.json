@@ -1,0 +1,33 @@
+{
+  "name": "yalitec-warehouse-cli",
+  "version": "1.0.0",
+  "description": "CLI to use Yalitec warehouse API SDK",
+  "main": "src/index.ts",
+  "license": "MIT",
+  "scripts": {
+    "commander": "node -r ts-node/register src/index.ts"
+  },
+  "dependencies": {
+    "@badgateway/oauth2-client": "^2.2.4",
+    "@commander-js/extra-typings": "^11.0.0",
+    "@inquirer/prompts": "^3.2.0",
+    "@types/node": "^20.8.3",
+    "commander": "^11.0.0",
+    "dotenv": "^16.3.1",
+    "loading-cli": "^1.1.0",
+    "typescript": "^5.2.2",
+    "yalitec-warehouse-sdk": "^1.0.4"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1"
+  },
+  "bin": {
+    "warehouse": "./dist/index.js"
+  },
+  "files": [
+    "/dist"
+  ],
+  "repository": {
+    "url": "https://github.com/moh-slimani/yalitec-warehouse-cli"
+  }
+}
